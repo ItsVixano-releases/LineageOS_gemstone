@@ -7,6 +7,12 @@
 - POCO X5 5G (moonstone)
 - Redmi Note 12 5G / Redmi Note 12R Pro (sunstone)
 
+### Known Quirks ###
+
+- Glitchy ViewFinder while using the camera "harmless".
+- Bluetooth microphone routing.
+- Prebuilt dtbo.
+
 Read the instructions carefully from [Here](http://wiki.itsvixano.me)
 
 Report a bug by following [this page](https://wiki.itsvixano.me/troubleshooting)
