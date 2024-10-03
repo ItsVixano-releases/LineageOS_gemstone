@@ -1,0 +1,358 @@
+====================
+     2024-10-03    
+====================
+* art
+caa3f13 Revert "Remove strip.keep_symbols from libart defaults" [Dmitry Muhomor]
+ed38979 art: Disable debug tracing on production builds [Danny Lin]
+
+* build/soong
+4f74ff6 use speed compiler filter for dexpreopt by default [Daniel Micay]
+95cee1e cleanbuild: Remove obj/{DTB,DTBO,KERNEL}_OBJ on installclean [Jason Edson]
+9199a07 ui: Pass the exact CPU thread count to -j [Park Ju Hyung]
+2fb7b46 soong: Specify heap size for metalava for S+ [Michael W]
+13809c1 soong: increase heap size for metalava [LeddaZ]
+
+* device/xiaomi/sm6250-common
+c6d6372 sm6250-common: Set arch variant to armv8-2a-dotprod [Adithya R]
+b3e3fb7 sm6250-common: Define boot image security patch [Alexander Koskovich]
+1cecdf4 sm6250-common: Set VENDOR_SECURITY_PATCH to platform [Chris Fries]
+
+* device/xiaomi/sm8350-common
+a065c13 sm8350-common: Set arch variant to armv8-2a-dotprod [Adithya R]
+61d380e sm8350-common: Define boot image security patch [Alexander Koskovich]
+e69b816 sm8350-common: Set VENDOR_SECURITY_PATCH to platform [Chris Fries]
+4928ed9 sm8350-common: Move citsensorservice to background cpuset [Adithya R]
+74a7b23 sm8350-common: Don't copy dummy camera config [Giovanni Ricca]
+
+* frameworks/av
+f6f5803 Codec2: Extend the queue empty work hack to MTK decoders too [bengris32]
+
+* frameworks/base
+44ef0d94 core: Hide ADB and developer setting enable status [someone5678]
+552f5bc7 gmscompat: Don't log stacktrace if GMS isn't installed [Tim Zimmermann]
+0d89abba gmscompat: AttestationService: Schedule only when GMS is installed [SamarV-121]
+3cdef484 gmscompat: Un-spoof GMS while adding google account [Adithya R]
+ab67115f gmscompat: Add prop to disable gms spoofing [SamarV-121]
+946195af gmscompat: Dynamically spoof props for GMS [SamarV-121]
+97caaedf gmscompat: Allow setting any field in certified build props [Adithya R]
+ba4d31e8 gmscompat: Remove unwanted spoofing of DEVICE_INITIAL_SDK_INT [SamarV-121]
+ef86a4d0 gmscompat: Get package name from context instead of app [jhenrique09]
+a0219afe base: Add Safetynet/Play Integrity hax [Danny Lin]
+654831ce ViewConfiguration: Set scroll friction to 0.009 [Alex Naidis]
+dd76c1c6 AbsListView: Improve scrolling cache [Pawit Pornkitprasan]
+296e551f SystemUI: respect setting for use of DeviceControlsTile from lockscreen [Dmitry Muhomor]
+a4fe08dc SystemUI: allow to use some QS tiles while device is locked [Dmitry Muhomor]
+fec58b89 SystemUI: require unlocking to use QS tiles by default [Dmitry Muhomor]
+de4ca188 core: PinSet: Fixup and improve algorithms caching [jhonboy121]
+d15c731d Cache pin algorithms in PinSet [Till Kottmann]
+4655a8ef Cache KeyStoreService [Till Kottmann]
+f7a67a2a (Point) Only calculate sin and cos once [Till Kottmann]
+a8ada77f LayoutInflater: Opportunistically create views directly for performance [Danny Lin]
+108ba77e SystemServiceRegistry: Replace ArrayMap with HashMap for performance [Danny Lin]
+ac9c8e1c LocalServices: Replace ArrayMap with HashMap for performance [Danny Lin]
+d8ba70fb ThemedResourceCache: Replace ArrayMap with HashMap for performance [Danny Lin]
+d30beeff Trace: Disable debug tracing on production builds [Danny Lin]
+9d58c20a Revert "Pre-emptively take a snapshot when finishing an activity before changing visibility" [Danny Lin]
+51ea6d43 hwui: Compile without no-omit-frame-pointer [Sourajit Karmakar]
+8f5450c5 libhwui: compile for performance [Vaisakh Murali]
+0f33d9ba libhwui: enable O3 when compiling for perf [Vaisakh Murali]
+bfa66bb0 libhwui: remove deprecated perf flags [Vaisakh Murali]
+84dd26b8 SystemUI: Remove Android build number from QS footer [Danny Lin]
+64156257 SystemUI: Reduce screenshot dismiss delay to 3 seconds [Danny Lin]
+638c0f41 core: Remove old app target SDK dialog [Danny Lin]
+d279ad40 core: Remove default aspect ratio limit for old apps [Danny Lin]
+077b8736 AuthRippleView: Allow disabling ripple unlock animation using overlay [jhenrique09]
+53716056 base: SystemUI: Allow flags to be overrideable [Jeferson]
+a7bf5cb0 Revert "Ignore the charging ripple flag." [Jeferson]
+66a67bd5 Revert "Update Media Seekbar Thumb Shape" [00day0]
+
+* frameworks/native
+c483c8a SF: Re-enable expensive rendering for blurs [Adithya R]
+55bcde9 SF: Don't enable expensive rendering for unknown dataspace [Adithya R]
+1c6e1aa sf: Add check for unknown dataspace [BOREDDY MAHIDHAR]
+7267630 SF: Add retry to EventThread postEvent [Rheygine Medel]
+bc06c49 sf: upsert RenderEngine's caches [Ramakant Singh]
+d2b1632 libbinder: Suppress log spam when unlinking death recipients [Danny Lin]
+
+* hardware/lineage/interfaces
+64281d8 sensors: Add a sensors 2.0 -> 1.0 subhal wrapper [bengris32]
+
+* lineage/hudson
+0a0ecc2 Regenerate device dependency mappings [LineageOS Infra]
+
+* lineage/wiki
+c239a40 wiki: Add Nokia 8 (NB1) [Tuan Anh]
+
+* packages/apps/Trebuchet
+160ebe3 Launcher3: Allow hiding top shadow on statusbar [Adithya R]
+c7e4a0c Launcher3: Set recents and app drawer opacity [Pranav Vashi]
+e1fcd1b Launcher3: Show clear all button in recents overview [jhonboy121]
+94868fa Launcher3: Double tap on home screen to turn off screen [Thecrazyskull]
+
+* packages/apps/Updater
+3cb130d Updater: Fix broken download ETA/progress [Salvo Giangreco]
+
+* packages/inputmethods/LatinIME
+65df474 LatinIME: fix gesture typing [johnny]
+abbbd12 Revert "LatinIME: Add fallback loader for JNI lib" [nift4]
+
+* system/core
+6d17b44 init: Report valid verified boot for SafetyNet checks [Danny Lin]
+
+* vendor/extra
+aad497a vendorsetup: Drop Shebang [Giovanni Ricca]
+f0d8b4d shfmt -ci -i 4 -w vendorsetup.sh [Giovanni Ricca]
+
+* vendor/qcom/opensource/libfmjni
+4c22ae7 libfmjni: Don't call `pthread_join` on `Pwr_down` [Giovanni Ricca]
+83e0871 libfmjni: Fix RDS info retrieving [iusmac]
+
+====================
+     2024-10-02    
+====================
+* device/xiaomi/gemstone
+c5d4020 [TMP] [Giovanni Ricca]
+
+* external/openssh
+60ca886 ssh program now resides in /product/bin [Yumi Yukimura]
+
+* frameworks/base
+19d7faf9 Automatic translation import [LineageOS Infra]
+
+* lineage/mirror
+249b226 Updated to 02-Oct-2024 12:01 UTC [Tim Schumacher]
+
+* packages/apps/Aperture
+822ce5c Automatic translation import [LineageOS Infra]
+
+* packages/apps/DeskClock
+907781a Automatic translation import [LineageOS Infra]
+
+* packages/apps/Dialer
+e0c717d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Eleven
+299b7bb Automatic translation import [LineageOS Infra]
+
+* packages/apps/Etar
+78dae02 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Glimpse
+fdee54d Automatic translation import [LineageOS Infra]
+
+* packages/apps/Jelly
+602c59e Automatic translation import [LineageOS Infra]
+
+* packages/apps/LineageParts
+86516ef Automatic translation import [LineageOS Infra]
+
+* packages/apps/Recorder
+81b2f0f Automatic translation import [LineageOS Infra]
+
+* packages/apps/Settings
+5b70029 Automatic translation import [LineageOS Infra]
+
+* packages/apps/Trebuchet
+b7614c9 Automatic translation import [LineageOS Infra]
+
+* vendor/crowdin
+31dabf8 Automatic translation import [LineageOS Infra]
+
+====================
+     2024-10-01    
+====================
+* hardware/qcom-caf/sm8550/audio/primary-hal
+99ae016 hal: Guard primary audio HAL in case target provides prebuilt [Bruno Martins]
+
+* kernel/xiaomi/sm6375
+ae84fc1aea55 gemstone_defconfig: Disable compression for pstore-ram [Juhyung Park]
+22dddf469022 gemstone_defconfig: Disable watchdog bite on panic [Alexander Winkowski]
+92e985c1d5a5 gemstone_defconfig: Disable memory offline support [Alexander Winkowski]
+87970c6464f3 gemstone_defconfig: Increase log buffer size to 2 MB [Alexander Winkowski]
+81addb096ba6 gemstone_defconfig: Enable ST21NFC NFC Controller driver [Giovanni Ricca]
+d309b9ba7e3e gemstone_defconfig: Enable Huaqin sysfs driver [Giovanni Ricca]
+2abf41dca63e gemstone_defconfig: Enable Camera wl2866d LDO driver [Giovanni Ricca]
+3af6b7740d79 gemstone_defconfig: Enable fingerprint drivers [Giovanni Ricca]
+745874a811b6 gemstone_defconfig: Enable Focaltech FT3519T touch driver [Giovanni Ricca]
+67ef5c31f79f gemstone_defconfig: Enable Vibrator-LDO V2 driver [Giovanni Ricca]
+69f0702e42a5 gemstone_defconfig: Enable Battery charging drivers [Giovanni Ricca]
+40da2e699072 gemstone_defconfig: Enable Onewire drivers [Giovanni Ricca]
+b9bda73011ee gemstone_defconfig: Enable USB Type C drivers [Giovanni Ricca]
+db29ccdf61fd gemstone_defconfig: Enable Consumer Ir [Giovanni Ricca]
+e33f5bb51e2f gemstone_defconfig: Enable Huaqin QGKI build [Giovanni Ricca]
+3ad8957d710b arm64: dts: gemstone: Decrease `spm-level` value [Giovanni Ricca]
+9cc838ed97bb arm64: dts: gemstone: Configure pstore memory region [Giovanni Ricca]
+73fed17f7ae3 arm64: dts: gemstone: Import regulators changes [Giovanni Ricca]
+bbc435a1fb82 arm64: dts: gemstone: Move to upstream ir-spi-led driver [Arian]
+7425dcf9de1c arm64: dts: gemstone: Configure infrared LED support [Giovanni Ricca]
+818fbfb7e045 arm64: dts: gemstone: Enable `{i2c/spi}-geni` [Giovanni Ricca]
+14c1b2b9bbb5 arm64: dts: gemstone: Import pinctrl changes [Giovanni Ricca]
+8bd90da3769d arm64: dts: gemstone: Import memory zones changes [Giovanni Ricca]
+a6cc0dfbb6be arm64: dts: gemstone: Import camera changes [Giovanni Ricca]
+67f53c936d95 arm64: dts: gemstone: Configure Sia81xx Audio Amplifier driver [Giovanni Ricca]
+1a6f08ccff89 arm64: dts: xiaomi: Initial skeleton for gemstone [Giovanni Ricca]
+24937b2cdf1c arm64: dts: vendor: Create xiaomi dir [Alexander Winkowski]
+f5c0ceae3711 nfc: Import ST21NFC NFC Controller driver [Giovanni Ricca]
+4dc1710e21ac misc: Import Huaqin sysfs driver [Giovanni Ricca]
+4ff0540e7697 misc: Import Camera wl2866d LDO driver [Giovanni Ricca]
+2f907c93190a input: fingerprint: goodix: Remove early display enable hacks [Demon000]
+3ae332a07982 input: fingerprint: Import Goodix driver [Giovanni Ricca]
+24e2bbd3d39d input: fingerprint: fpc: Micro-optimize interrupt path [Kazuki Hashimoto]
+16cdb4b460c8 input: fingerprint: fpc: Remove sysfs wakelock control [Alexander Winkowski]
+5d2f8939695f input: fingerprint: fpc: Remove early display enable hacks [Demon000]
+e44085402313 input: fingerprint: fpc: Drop hqsysfs dependency [Giovanni Ricca]
+550e8ce81fb4 input: fingerprint: Import FPC1020 driver [Giovanni Ricca]
+977e9a3bb3f6 input: Create subdirectory for fingerprint drivers [Alexander Winkowski]
+0fdfae31cee3 input: touchscreen: FT3519T: Symlink gesture sysfs node to /proc [Giovanni Ricca]
+961062ece16f input: touchscreen: FT3519T: Fix `-Wfortify-source` warning [Giovanni Ricca]
+96167b083edb input: touchscreen: FT3519T: Disable test mode [Giovanni Ricca]
+0a514cd3bfd1 input: touchscreen: FT3519T: Drop hqsysfs dependency [Giovanni Ricca]
+7d861aa9b42c input: touchscreen: Import Focaltech FT3519T touch driver [Giovanni Ricca]
+57aba0b8e230 leds: Import Vibrator-LDO V2 driver [Giovanni Ricca]
+3439fffb1aab pinctrl: qcom: Remove selected GPIOs from reserved pins list [Giovanni Ricca]
+c720944119e6 w1: Import Xiaomi changes [Giovanni Ricca]
+cbd2a5493e18 w1: slaves: Import OneWire battery authentication driver [Giovanni Ricca]
+4922d8567a16 [TMP] power: supply: temp [Giovanni Ricca]
+ac59bc55f273 power: supply: sm5602_fg: Fix `-Wimplicit-int` error [Giovanni Ricca]
+9b817d3ab062 power: supply: Import sm5602 fuel gauge driver [Giovanni Ricca]
+fdbb4c3c79cd power: supply: sc8551_charger: Remove `static` keyword [Giovanni Ricca]
+c7fa3da6fe83 power: supply: Import sc8551 charger driver [Giovanni Ricca]
+c86e03b52a55 power: supply: pd_policy_manager: Fix `-Wmisleading-indentation` warning [Giovanni Ricca]
+60b0f0a32dcf power: supply: Import power delivery driver [Giovanni Ricca]
+bcc261d03df2 power: supply: ln8000: Cast void pointer to int without warning [UtsavBalar1231]
+df34ddf04fa2 power: supply: Import ln8000 charger driver [Giovanni Ricca]
+6d077b704924 power: supply: Import Huaqin charger manager driver [Giovanni Ricca]
+c6782492c441 power: supply: bq25890_charger: Fix `-Wunused-result` warning [Giovanni Ricca]
+beff5b9a7959 power: supply: Import bq25890 charger Xiaomi changes [Giovanni Ricca]
+ee81cce79f1f power: supply: battery_secrete: Fix `-Wpointer-to-int-cast` warning [Giovanni Ricca]
+433b000c538b power: supply: Import batterysecret driver [Giovanni Ricca]
+afef559c6ab0 power: reset: Export `do_msm_poweroff` symbol [Giovanni Ricca]
+4834e44dc3cb msm-poweroff: Perform a warm reset on panic [Alexander Winkowski]
+9fd7d94b3593 msm-poweroff: Disable reboot to EDL [Alexander Winkowski]
+a64d3d7ece39 usb: phy: Export `msm_hsphy_dpdm_regulator` symbols [Giovanni Ricca]
+bb24a4838a9f usb: typec: tcpc: Fix PM logging levels [Alexander Winkowski]
+b713832c2428 usb: typec: tcpc: Disable debug logs by default [Alexander Winkowski]
+3650a11b224d usb: typec: tcpc: Remove module sections from rt-regmap.o [Alexander Winkowski]
+0f5c7bc91820 usb: typec: tcpc: Remove compiler flags overrides [Alexander Winkowski]
+2a098192ae3c usb: typec: tcpc: Remove conflicting type of `sched_set_fifo` [Giovanni Ricca]
+180e3da5e59c usb: typec: Import Type-C Port Controller [Giovanni Ricca]
+ecce92806876 media: rc: ir-spi: enlarge transmit buffer [Ivan Vecera]
+654179b95db3 techpack: audio: holi: Report correct key code of headset buttons [dianlujitao]
+e39760d719bd techpack: audio: Import MBHC changes [Alexander Winkowski]
+838dfe30964a techpack: audio: Initialize Sia81xx Audio Amplifier driver [Andy Prasetya]
+0bd97fc85e5b techpack: audio: sia81xx: Don't set power SoC Enum [Andy Prasetya]
+8bd52cab4687 techpack: audio: sia81xx: Load firmware earlier [Andy Prasetya]
+d55e63a928aa techpack: audio: sia81xx: Import `wcd937x` functions [Giovanni Ricca]
+a9f47da04c87 teckpack: audio: sia81xx: Fix `-Wstrict-prototypes` error [Giovanni Ricca]
+3fdf4e48b613 techpack: audio: sia81xx: Guard `sia91xx_common` [Giovanni Ricca]
+48ed51cc4995 techpack: audio: sia81xx: Use `qcom` as platform type [Giovanni Ricca]
+61cbae57a7fd techpack: audio: sia81xx: Conditionally build it as a module [Giovanni Ricca]
+0f9318eb8622 techpack: audio: sia81xx: Rewrite Makefile into Kbuild [Giovanni Ricca]
+1f89d42e9667 techpack: audio: Import Sipa Sia81xx Audio amplifier driver [Giovanni Ricca]
+6bb3f87bccc4 techpack: camera: Add support to Camera wl2866d LDO driver [Giovanni Ricca]
+5638d0980aa3 techpack: camera: Increase CAM_REQ_MGR_EVENT_MAX [Giovanni Ricca]
+a9493e540be3 techpack: camera: Handle multiple cameras on the same pin [Alexander Winkowski]
+12e51f52dfc9 [TMP] techpack: display: Fix EDID for stock dtbo [Alexander Winkowski]
+e88cce027e33 [TMP] techpack: display: Invert brightness byte order [Alexander Winkowski]
+73b9868db6f9 techpack: display: Reset panel on the first kickoff [Alexander Winkowski]
+ee990235cae6 techpack: display: Implement backlight adjustment for 90 Hz [Giovanni Ricca]
+db1150549dd5 techpack: display: Implement backlight adjustment for 120/60 Hz [Alexander Winkowski]
+0a9511a813c8 techpack: display: Implement doze mode [Alexander Winkowski]
+c2b01b47ff19 techpack: display: Implement custom ESD protection [Alexander Winkowski]
+5b90095f00ba techpack: display: Disable transition to LP2 for video mode panels [Alexander Winkowski]
+9089ba3e97d9 techpack: display: Wait 10ms before resetting panel [Alexander Winkowski]
+9ac6353952c2 techpack: display: Change panel power off sequence [Alexander Winkowski]
+a2045a8092b9 arm64: Add Huaqin QGKI config option [Giovanni Ricca]
+183d06881ce1 scripts: Set custom localversion [Alexander Winkowski]
+777f5aa94df0 gemstone_defconfig: Disable WERROR [Giovanni Ricca]
+2ee4bbbfee4e gemstone_defconfig: Build modules into the kernel [Alexander Winkowski]
+d49cecba8a4a gemstone_defconfig: Disable CONFIG_MSM_RDBG [Thierry Strudel]
+1bfe1ab98da7 gemstone_defconfig: Disable in-kernel header archive [Danny Lin]
+052ee9230a57 gemstone_defconfig: Build separated soc-dtb and board-dtbos [Cyan_Hsieh]
+a6732ba9cf01 gemstone_defconfig: Enable CONFIG_EXFAT_FS [Sandeep Patil]
+812af76acdb1 gemstone_defconfig: Enable QCACLD [Luca Stefani]
+dacca9eca5e6 gemstone_defconfig: Generate [Giovanni Ricca]
+ae6a10351cb9 bpf: Allow building BPF JIT without module support on arm64 [Danny Lin]
+15f107b68ebb bpf: make generic bpf_jit_alloc_* depend on MODULES [Jesse Chan]
+5440890b9994 techpack: rmnet: built-in [Juhyung Park]
+e33e615837e0 techpack: display: built-in [Juhyung Park]
+61002fcb541c techpack: camera: built-in [Juhyung Park]
+ed98138e24ed techpack: audio: built-in [Juhyung Park]
+badf3029ff44 qcacld-3.0: Rename ipa_is_ready() to avoid conflicts [Alexander Winkowski]
+b9d40cf42555 qcacld-3.0: Remove duplicate nl80211hdr_put() definition [Sultan Alsawaf]
+e8ed68469ba4 qcacld-3.0: Discard wlan_boot sysfs code on !CONFIG_MODULES [Park Ju Hyung]
+
+* lineage/scripts
+888f784 pixel: extract-utils: implement V1 image unpacking in fbpack [Cosmin Tanislav]
+
+* prebuilts/extract-tools
+b126753 linux-x86: remove qc_image_unpacker [Cosmin Tanislav]
+
+====================
+     2024-09-30    
+====================
+* device/qcom/sepolicy_vndr/sm8550
+16b4946 sepolicy_vndr: Allow init/vendor_init to write proc firmware config [Luofan Chen]
+
+* device/xiaomi/sm8350-common
+384d00f sm8350-common: Build xiaomi-telephony-stub [danielml]
+2ab2f58 sm8350-common: Remove media_codecs_google_c2* [Michael Bestas]
+477fe7b sm8350-common: Move input surface to CCodec [Pawin Vongmasa]
+6a9ab95 sm8350-common: Use AOSP default Codec2/OMX ranks [Michael Bestas]
+523adb8 sm8350-common: Remove software omx codec references [Aaron Kling]
+
+* vendor/xiaomi/gemstone
+85b8f59 gemstone: Sync with tree [Giovanni Ricca]
+
+====================
+     2024-09-29    
+====================
+* device/xiaomi/daisy
+76a6f21 daisy: Import `hardware/xiaomi` [Giovanni Ricca]
+
+* device/xiaomi/sm6375-common
+b3903e9 sm6375-common: sepolicy: Label `gemstone` Huaqin HW identifier node [Giovanni Ricca]
+
+* device/xiaomi/sm8350-common
+0b7eed4 sm8350-common: Migrate sensor HAL to AIDL interface [Manish Kushwaha]
+
+* device/xiaomi/ysl
+a9a08cf ysl: Import `hardware/xiaomi` [Giovanni Ricca]
+
+* hardware/qcom-caf/sm8250/display
+58c486b Add missing libc++ includes [Tomasz Wasilczyk]
+
+* hardware/xiaomi
+d15944f sensors: v2: Use GetBoolProperty from libbase [bengris32]
+
+====================
+     2024-09-28    
+====================
+* kernel/xiaomi/mt6895
+af4de2f5cc ANDROID: usb: gadget: Avoid wasting reserved space in usb_request [bengris32]
+6de8d76a01 ANDROID: usb: gadget: Inline usb_gadget_control_complete() function [bengris32]
+464f0d3cea UPSTREAM: media: videobuf2: always call poll_wait() on queues [Alexandre Courbot]
+029c7a1a8c usb: gadget: uvc: significantly increase event queue size [nift4]
+1bc10b0890 usb: gadget: uvc: print warning when dropping events [nift4]
+2d528476d0 usb: gadget: uvc: make API compatible with mainline again [nift4]
+f25f976a66 FROMLIST: usb: gadget: uvc: allow ioctl to send response in status stage [Paul Elder]
+3f99cbb0a7 usb: mtu3: gadget: implement optional explicit status stage [nift4]
+9564ab395c ANDROID: usb: gadget: Use reserved field to store new member explicit_status [bengris32]
+9532bd87ac FROMLIST: usb: musb: gadget: implement optional explicit status stage [Paul Elder]
+9536f82a01 FROMLIST: usb: gadget: add mechanism to specify an explicit status stage [Paul Elder]
+4599995ff0 FROMLIST: usb: gadget: uvc: package setup and data for control OUT requests [Paul Elder]
+9586237b6f FROMLIST: usb: gadget: uvc: enqueue usb request in setup handler for control OUT [Paul Elder]
+daf2045143 FROMLIST: usb: uvc: include videodev2.h in g_uvc.h [Paul Elder]
+
+* vendor/xiaomi/sm6375-common
+ca7abd9 sm6375-common: Sync with tree [Giovanni Ricca]
+
+====================
+     2024-09-27    
+====================
+* tools/extract-utils
+a466f3f templates: Add a sort-blobs-list shortcut [Sebastiano Barezzi]
+
+* vendor/lineage
+b4128c4 vars: remove fbpk_version and wifi_only [Cosmin Tanislav]
+
