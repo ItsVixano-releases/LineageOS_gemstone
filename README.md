@@ -11,7 +11,6 @@
 
 - Glitchy ViewFinder while using the camera "harmless".
 - Bluetooth microphone routing.
-- Prebuilt dtbo.
 
 Read the instructions carefully from [Here](http://wiki.itsvixano.me)
 
