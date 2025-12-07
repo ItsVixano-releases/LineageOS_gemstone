@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": 1731662578,
-      "filename": "lineage-21.0-20241115-UNOFFICIAL-gemstone.zip",
-      "id": "bfd9562e416a9d97013d5720f5d7b3f5",
+      "datetime": 1764843650,
+      "filename": "lineage-23.0-20251204-UNOFFICIAL-gemstone.zip",
+      "id": "a7c8166c117d7e0bed7fa37c9046f8120e33963812d1417b06eda81b740ccb4f",
       "romtype": "unofficial",
-      "size": 1104430954,
-      "url": "https://github.com/ItsVixano-releases/LineageOS_gemstone/releases/download/20241115/lineage-21.0-20241115-UNOFFICIAL-gemstone.zip",
-      "version": "21.0"
+      "size": 1077720149,
+      "url": "https://files.itsvixano.me/lineage/gemstone/20251204/lineage-23.0-20251204-UNOFFICIAL-gemstone.zip",
+      "version": "23.0"
     }
   ]
 }
